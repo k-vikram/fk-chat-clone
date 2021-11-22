@@ -1,0 +1,71 @@
+
+/* Chat window styles */
+
+.chatContainer{
+  @apply flex flex-col justify-between h-[100vh];
+}
+
+.chatHeader{
+  @apply flex font-medium px-4 py-3 border-b-2 border-l-2 border-gray-100 bg-white h-24;
+}
+
+.chatHeaderTitle{
+  @apply flex flex-col justify-center;
+}
+
+.chatThumbnailHolder{
+  @apply p-2;
+}
+
+.chatThumbnail{
+  @apply h-12 w-12 object-contain;
+}
+
+.chatExchangeContainer{
+  @apply bg-[#e6e6e6] flex-grow overflow-scroll;
+}
+
+.chatMessageBoxBot{
+  @apply flex justify-start w-1/2;
+  @apply m-4
+}
+.chatMessageBoxBot> div{
+  @apply p-2 rounded-lg rounded-tl-none bg-white text-black ;
+}
+.optionedMessage{
+  @apply w-full;
+}
+.optionedMessage>div{
+  @apply border-l-0 border-r-0 border-gray-50 border-[0.2rem] flex justify-center p-1 text-blue-500 hover:bg-gray-200 hover:cursor-pointer hover:text-gray-500;
+}
+
+
+.chatMessageBoxUser{
+  @apply flex justify-end;
+  @apply m-4
+}
+.chatMessageBoxUser>div{
+  @apply p-2 rounded-lg rounded-tr-none bg-blue-500 text-white;
+}
+.chatMessageBoxUser>div>div{
+  @apply flex justify-end;
+}
+
+
+.chatFooter{
+  @apply flex;
+}
+
+
+.messageTypeBox{
+  @apply w-11/12 border-0 resize-none focus:ring-0 text-gray-500;
+}
+
+
+.sendButtonIcon{
+  @apply h-10 w-10 text-gray-400 transform rotate-90 hover:text-gray-500;
+}
+
+.rocketButton{
+@apply w-1/12;
+}

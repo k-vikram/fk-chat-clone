@@ -1,0 +1,125 @@
+.main {
+  @apply text-black grid grid-cols-2;
+}
+
+/* Chat List Window styles */
+
+.spanFull{
+  @apply col-span-2;
+}
+
+.spanHalf{
+  @apply col-span-1;
+}
+
+.header{
+  @apply w-full flex flex-col px-4 py-3 border-b-2 border-gray-100 bg-white h-24; 
+}
+
+.filterBox{
+@apply bg-gray-50 border border-t-0 border-l-0 border-r-0 border-black block w-full focus:ring-0;
+}
+
+.filterTitle{
+  @apply font-semibold;
+}
+
+.chatListerCont{
+  @apply overflow-scroll;
+  height: calc(100vh - 6rem);
+}
+
+.chatItemContainer {
+  @apply flex justify-between border-gray-200 p-2 border border-l-0 border-r-0 hover:bg-gray-50 cursor-pointer;
+}
+
+.chatInfo{
+  @apply flex font-medium;
+}
+
+.thumbnailHolder{
+  @apply p-2;
+}
+.thumbnail{
+  @apply h-16 w-16 object-contain;
+}
+
+.latestText{
+  @apply text-gray-400 font-bold text-sm my-2;
+}
+
+.dateItem{
+  @apply text-gray-400 text-sm font-bold;
+}
+
+
+/* Chat window styles */
+
+.chatContainer{
+  @apply flex flex-col justify-between h-[100vh];
+}
+
+.chatHeader{
+  @apply flex font-medium px-4 py-3 border-b-2 border-l-2 border-gray-100 bg-white h-24;
+}
+
+.chatHeaderTitle{
+  @apply flex flex-col justify-center;
+}
+
+.chatThumbnailHolder{
+  @apply p-2;
+}
+
+.chatThumbnail{
+  @apply h-12 w-12 object-contain;
+}
+
+.chatExchangeContainer{
+  @apply bg-[#e6e6e6] flex-grow overflow-scroll;
+}
+
+.chatMessageBoxBot{
+  @apply flex justify-start w-1/2;
+  @apply m-4
+}
+.chatMessageBoxBot> div{
+  @apply p-2 rounded-lg rounded-tl-none bg-white text-black ;
+}
+.optionedMessage{
+  @apply w-full;
+}
+.optionedMessage>div{
+  @apply border-l-0 border-r-0 border-gray-50 border-[0.2rem] flex justify-center p-1 text-blue-500 hover:bg-gray-200 hover:cursor-pointer hover:text-gray-500;
+}
+
+
+.chatMessageBoxUser{
+  @apply flex justify-end;
+  @apply m-4
+}
+.chatMessageBoxUser>div{
+  @apply p-2 rounded-lg rounded-tr-none bg-blue-500 text-white;
+}
+.chatMessageBoxUser>div>div{
+  @apply flex justify-end;
+}
+
+
+.chatFooter{
+  @apply flex;
+}
+
+
+.messageTypeBox{
+  @apply w-11/12 border-0 resize-none focus:ring-0 text-gray-500;
+}
+
+
+.sendButtonIcon{
+  @apply h-10 w-10 text-gray-400 transform rotate-90 hover:text-gray-500;
+}
+
+.rocketButton{
+@apply w-1/12;
+}

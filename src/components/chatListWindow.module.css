@@ -1,0 +1,51 @@
+
+/* Chat List Window styles */
+
+.spanFull{
+    @apply col-span-2;
+  }
+  
+  .spanHalf{
+    @apply col-span-1;
+  }
+  
+  .header{
+    @apply w-full flex flex-col px-4 py-3 border-b-2 border-gray-100 bg-white h-24; 
+  }
+  
+  .filterBox{
+  @apply bg-gray-50 border border-t-0 border-l-0 border-r-0 border-black block w-full focus:ring-0;
+  }
+  
+  .filterTitle{
+    @apply font-semibold;
+  }
+  
+  .chatListerCont{
+    @apply overflow-scroll;
+    height: calc(100vh - 6rem);
+  }
+  
+  .chatItemContainer {
+    @apply flex justify-between border-gray-200 p-2 border border-l-0 border-r-0 hover:bg-gray-50 cursor-pointer;
+  }
+  
+  .chatInfo{
+    @apply flex font-medium;
+  }
+  
+  .thumbnailHolder{
+    @apply p-2;
+  }
+  .thumbnail{
+    @apply h-16 w-16 object-contain;
+  }
+  
+  .latestText{
+    @apply text-gray-400 font-bold text-sm my-2;
+  }
+  
+  .dateItem{
+    @apply text-gray-400 text-sm font-bold;
+  }
+  
