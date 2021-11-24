@@ -1,6 +1,6 @@
 
 
-## Flipcart Chat APp Clone
+## Flipcart Chat App Clone
 
 ## Usage
 
